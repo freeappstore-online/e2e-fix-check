@@ -1,0 +1,15 @@
+{
+  "name": "e2e-fix-check",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "repository": { "type": "git", "url": "git+https://github.com/freeappstore-online/e2e-fix-check.git" },
+  "scripts": {
+    "dev": "pnpm --filter @e2e-fix-check/web dev",
+    "build": "pnpm --filter @e2e-fix-check/web build",
+    "preview": "pnpm --filter @e2e-fix-check/web preview",
+    "typecheck": "pnpm --filter @e2e-fix-check/web exec tsc -b",
+    "test": "pnpm --filter @e2e-fix-check/web exec tsc -b"
+  }
+}
